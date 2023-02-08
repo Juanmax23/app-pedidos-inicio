@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body class="container-fluid">
+
+    <div id="menu">
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" id="btnMeNuTusRecetas">Proyecto Integrador</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" id="inicio">inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="btnMenuSucursales">Sucursales</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="inicioSesion">ingreso</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="registrarse" href="#">Registro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="cerrarSesion">Cerrar Sesion</a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+
+    </div>
+
+
+    <div id="inicioApp" class="container-fluid">
+        <h1 class="text-center">Listado De Productos</h1>
+        <div id="divProductos" class="row mt-4 ">
+        </div>
+    </div>
+
+    <div id="productoSeleccionado"></div>
+
+    <div id="sucursales">
+        
+        <h3 class="mt-5">Sucursal:</h3>
+        <select id="comboSucursales" class="form-select" aria-label="Default select example">
+            <option selected>Seleciona la sucursal</option>
+        </select>
+    </div>
+
+
+    <div id="registro" class="container-fluid form text-center">
+
+        <h1>Registrarse</h1>
+
+        <form action="" id="formRegistro">
+
+            <input class="form-control" name="nombre" id="nombre" type="text" placeholder="Nombre">
+            <input class="form-control" name="apellido" id="apellido" type="text" placeholder="Apellido">
+            <input class="form-control" name="email" id="email" type="email" placeholder="Email">
+            <input class="form-control" name="direccion" id="direccion" type="text" placeholder="Direccion">
+            <input class="form-control" name="password" id="RegistroPassword" type="password" placeholder="Contrasenia">
+            <input class="form-control" id="RegistroPassword2" type="password" placeholder="Repetir Contrasenia">
+            <br>
+
+            <input class="btn btn-primary" value="Registrase" id="registro" type="submit">
+
+        </form>
+
+
+        <p id="mensajeRegistro" class="text-start"></p>
+    </div>
+
+    <div id="login" class=" row form text-center  ">
+        <h1>Iniciar Secion</h1>
+        <form action="">
+            <input id="loginEmail" type="email" class="form-control " placeholder="Ingrese su email">
+            <input id="loginPassword" type="password" class="form-control" placeholder="Ingrese su contrasenia"
+                value="12345678">
+
+            <input class="btn btn-primary" value="Iniciar Secion" id="btnLogin" type="submit">
+        </form>
+
+        <br>
+        <p class="text-start" id="mensajeLogin"></p>
+    </div>
+
+    <script src="codigoJS/clases.js"></script>
+    <script src="codigoJS/index.js"></script>
+</body>
+
+</html>
